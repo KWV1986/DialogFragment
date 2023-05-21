@@ -10,6 +10,7 @@ import com.hsbc.com.dialogfragment.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     lateinit var mainBinding : ActivityMainBinding
      private val TAG = "Main Activity"
+    var count = 0;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
             openDialogFragment()
         }
         Log.i(TAG,"Added a log in test branch")
+
 
     }
 
