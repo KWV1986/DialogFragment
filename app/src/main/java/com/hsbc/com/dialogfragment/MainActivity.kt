@@ -2,13 +2,14 @@ package com.hsbc.com.dialogfragment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.hsbc.com.dialogfragment.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var mainBinding : ActivityMainBinding
-
+     private val TAG = "Main Activity"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         mainBinding.btnok.setOnClickListener {
             openDialogFragment()
         }
+        Log.i(TAG,"Added a log in test branch")
 
     }
 
