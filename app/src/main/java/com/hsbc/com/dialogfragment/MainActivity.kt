@@ -10,7 +10,8 @@ import com.hsbc.com.dialogfragment.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     lateinit var mainBinding : ActivityMainBinding
      private val TAG = "Main Activity"
-    var count = 0;
+     var count = 0
+     var score = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
